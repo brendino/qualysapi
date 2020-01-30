@@ -2153,7 +2153,6 @@ class Scan(CacheableQualysObject):
     status = None
     target = None
     option_profile = None
-    state = None
 
     class Status(CacheableQualysObject):
         '''
@@ -2193,7 +2192,6 @@ class Scan(CacheableQualysObject):
                 'STATUS': ('status', self.Status),
                 'TARGET': ('target', unicode_str),
                 'OPTION_PROFILE': ('option_profile', OptionProfile),
-                'STATE': ('state', unicode_str),
             })
         super(Scan, self).__init__(*args, **kwargs)
 
