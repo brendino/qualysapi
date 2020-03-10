@@ -13,7 +13,7 @@ __license__ = 'BSD-new'
 # Make pyflakes happy.
 __pkgname__ = None
 __version__ = None
-execfile('qualysapi/version.py')
+exec(open('qualysapi/version.py').read())
 
 # A utility function to read the README file into the long_description field.
 def read(fname):
